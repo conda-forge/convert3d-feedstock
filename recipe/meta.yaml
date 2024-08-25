@@ -16,14 +16,12 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - {{ stdlib("c") }}
+    - {{ stdlib('c') }}
     - cmake
     - ninja
   host:
     - libitk-devel
-  run:
     - fftw
-    - libitk
 
 test:
   commands:
