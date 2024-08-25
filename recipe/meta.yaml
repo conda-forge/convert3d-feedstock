@@ -10,19 +10,18 @@ source:
   sha256: bd45482247fa4ac5ab98b3a775b5438390671e3e224a42f73967904b3895050d
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib('c') }}
     - cmake
     - ninja
   host:
     - libitk-devel
-  run:
     - fftw
-    - libitk
 
 test:
   commands:
