@@ -22,9 +22,6 @@ requirements:
     - ninja
   host:
     - libitk-devel
-  run:
-    - fftw
-    - {{ pin_compatible('libitk', min_pin='x.x', max_pin='x.x') }}
 
 test:
   commands:
